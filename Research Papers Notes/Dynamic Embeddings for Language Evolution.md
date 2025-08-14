@@ -11,7 +11,7 @@ The main goal of this paper is to create a model that can track how the meanings
     
 - **Time Slices:** The authors divide large text collections into time slices, such as one for each year. 
     
-- **Gaussian Random Walk:** The key innovation is treating a word's embedding vector as a **sequential latent variable**. The embedding for one year is modeled as a**Gaussian random walk** from the previous year's embedding. This means the embedding for 2015 is assumed to be the embedding from 2014 plus a small, random "drift." This enforces smoothness and ensures the embeddings are comparable across time. 
+- **Gaussian Random Walk:** The key innovation is treating a word's embedding vector as a **sequential latent variable**. The embedding for one year is modeled as a **Gaussian random walk** from the previous year's embedding. This means the embedding for 2015 is assumed to be the embedding from 2014 plus a small, random "drift." This enforces smoothness and ensures the embeddings are comparable across time. 
     
 - **Shared Context Vectors:** While the main word embeddings (ρvt​) change over time, a set of **context vectors** (αv​) is shared across all time slices. This helps "ground" the evolving meanings in a consistent semantic space. 
     

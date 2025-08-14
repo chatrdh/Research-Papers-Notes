@@ -26,7 +26,7 @@ Most previous models fall into two camps:
 Instead of just looking at co-occurrence counts, GloVe focuses on **how often word pairs co-occur relative to other words**.  
 Example:
 - *ice* and *steam* both co-occur with *water*, but *ice* co-occurs more with *solid*, and *steam* more with *gas*.
-- So the ratio \( \frac{P (\text{solid}|\text{ice})}{P (\text{solid}|\text{steam})} \gg 1 \)
+- So the ratio $$\frac{P (\text{solid}|\text{ice})}{P (\text{solid}|\text{steam})} \gg 1 $$ 
 
  These ratios help differentiate meaning.
 
@@ -56,7 +56,7 @@ f(x) =
 \end{cases}
 $$
 
-- Empirically: \( x_{max} = 100, \alpha = \frac{3}{4} \)
+- Empirically: $$ x_{max} = 100, \alpha = \frac{3}{4}$$
 - Helps model learn better on **mid-frequency** co-occurrences.
 
 ---
