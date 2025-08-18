@@ -33,7 +33,7 @@ Example:
 ---
 
 #### 2. Objective Function (Custom Weighted Loss)  
-For words \(i\) and \(j\), with co-occurrence count \(X_{ij}\), optimize:  
+For words \(i\) and \(j\), with co-occurrence count $$(X_{ij})$$, optimize:  
 $$
 J = \sum_{i,j=1}^{V} f(X_{ij}) \left( w_i^\top \tilde{w}_j + b_i + \tilde{b}_j - \log X_{ij} \right)^2
 $$
